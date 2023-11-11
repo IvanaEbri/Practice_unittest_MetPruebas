@@ -31,7 +31,7 @@ class TestAppEmergenciaMethods(unittest.TestCase):
         self.app = App_emergencia()
 
     def test_ultimas_emergencias(self):
-        """Verificar si se devuelven las últimas 2 emergencias correctamente"""
+        """Verifica si se devuelven las últimas 2 emergencias correctamente"""
         emergencias=self.app._ultimas_emergencias(2)
         cant_registros = len(emergencias)
         self.assertEqual(cant_registros, 2)
